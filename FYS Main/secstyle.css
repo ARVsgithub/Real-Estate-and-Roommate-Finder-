@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+.navbar {
+  height: 60px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.nav-logo {
+  height: 58px;
+  width: 100px;
+}
+
+.logo {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.border {
+  border: 1.5px solid transparent;
+}
+
+.border:hover {
+  border: 1.5px solid white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin-left: auto; /* Pushes the links to the right */
+}
+
+.nav-links li {
+  margin-left: 20px; /* Space between links */
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+.nav-links a:hover {
+  border: 1.5px solid white;
+}
+
+.hero-section {
+  width: 100%;
+  height: 70vh; /* Adjusted height to 70% of the viewport height */
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire area */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Ensures the image is behind other content */
+}
+
+.hero-message {
+  position: relative;
+  z-index: 1; /* Ensures the text is above the image */
+  padding: 9.5px;
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background for readability */
+  color: black;
+  max-width: 600px;
+  margin: 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* Adjusted to fit within the new height */
+}
+
+.box {
+  border: 2px solid black;
+  height: 400px;
+  width: calc(25% - 20px); /* Adjusted width to fit four boxes in a row with margin */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px; /* Space between boxes */
+  background-color: white;
+  padding: 20px 0px 15px;
+}
+
+.rent-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Ensures boxes are evenly spaced */
+  background-color: #e2e7e6;
+}
+
+.box-img {
+  width: 250px;
+  height: 300px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  object-fit: cover;
+  background-size: cover;
+}
+
+.box-content {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.boxpara{
+  text-decoration: underline;
+  
+}
+.footer{
+  background-color: #24262b;
+  padding: 70px 0;
+}
+.container{
+
+  max-width: 1170px;
+  margin: auto;
+}
+ul{
+  list-style: none;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap ;
+}
+.footer-col{
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: white;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: #ffffff;
+  padding-left: 8px;
+
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width:40px;
+  background-color: rgba(255,255,255,0.2);
+  /* margin-right: 10px; */
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.3s ease, color 0.3s ease;
+  
+  }
+  .footer-col .social-links a:hover {
+    background-color: #ffffff;
+    color: #24262b;
+  }
+  .footer-col .social-links {
+    display: flex;  /* Use flexbox to align items horizontally */
+    padding: 0;
+    margin: 0;
+  }
+  .newsletter-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .newsletter-input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .newsletter-btn {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #24262b;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .newsletter-btn:hover {
+    background-color: #24262b;
+    color: #ffffff;
+  }
+  /* responsive */
+  @media(max-width: 767px){
+    .footer-col {
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .footer-col {
+      width: 100%;
+    
+  }
+}
